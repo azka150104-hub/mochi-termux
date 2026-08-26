@@ -6,12 +6,11 @@ MOCHI sengaja **tidak** menyediakan auto-rejoin, injeksi cookie, pengambilan tok
 
 ## Jalankan dari GitHub di Termux
 
-1. Buat repositori GitHub baru, misalnya `mochi-termux`, lalu unggah dua berkas ini ke repositori tersebut.
-2. Di Termux, jalankan perintah berikut. Ganti `USERNAME` dengan nama akun GitHub Anda.
+1. Di Termux, jalankan perintah berikut.
 
 ```sh
 pkg update -y && pkg install git termux-tools -y
-git clone https://github.com/USERNAME/mochi-termux.git
+git clone https://github.com/azka150104-hub/mochi-termux.git
 cd mochi-termux
 chmod +x mochi.sh
 ./mochi.sh
@@ -27,10 +26,10 @@ Jika `termux-open-url` tidak tersedia, jalankan `pkg install termux-tools -y`, l
 
 ## Prompt execute singkat
 
-Setelah repositori sudah ada di GitHub, salin ini ke Termux:
+Salin ini ke Termux:
 
 ```sh
-pkg update -y && pkg install git termux-tools -y && git clone https://github.com/USERNAME/mochi-termux.git && cd mochi-termux && chmod +x mochi.sh && ./mochi.sh
+pkg update -y && pkg install git termux-tools -y && git clone https://github.com/azka150104-hub/mochi-termux.git && cd mochi-termux && chmod +x mochi.sh && ./mochi.sh
 ```
 
 Untuk pembaruan versi:
