@@ -6,8 +6,7 @@ MOCHI sengaja **tidak** menyediakan auto-rejoin, injeksi cookie, pengambilan tok
 
 ## Jalankan dari GitHub di Termux
 
-1. Buat repositori GitHub baru, misalnya `mochi-termux`, lalu unggah dua berkas ini ke repositori tersebut.
-2. Di Termux, jalankan perintah berikut.
+Di Termux, jalankan perintah berikut.
 
 ```sh
 pkg update -y && pkg install git termux-tools -y
@@ -17,10 +16,10 @@ chmod +x mochi.sh
 ./mochi.sh
 ```
 
-Atau jalankan langsung dengan tautan game:
+Atau buka game langsung dengan Place ID angka:
 
 ```sh
-./mochi.sh 'https://www.roblox.com/games/PLACE_ID'
+./mochi.sh PLACE_ID
 ```
 
 Jika `termux-open-url` tidak tersedia, jalankan `pkg install termux-tools -y`, lalu buka ulang Termux.
@@ -29,12 +28,12 @@ Jika `termux-open-url` tidak tersedia, jalankan `pkg install termux-tools -y`, l
 
 Sesudah menjalankan `./mochi.sh`, ketik angka menu lalu tekan Enter:
 
-- `2` — simpan URL game Roblox resmi Anda.
+- `2` — simpan Place ID game Roblox (angka saja).
 - `1` — buka game yang sudah disimpan pada aplikasi atau browser Roblox.
 - `4` — cek apakah `git` dan `termux-open-url` sudah tersedia.
 - `0` — keluar.
 
-Pada penggunaan pertama, pilih `2` dahulu, tempel URL game resmi (misalnya `https://www.roblox.com/games/PLACE_ID`), lalu pilih `1` untuk membukanya.
+Pada penggunaan pertama, pilih `2` dahulu, masukkan Place ID game (misalnya `123456789`), lalu pilih `1` untuk membukanya.
 
 ## Prompt execute singkat
 
@@ -52,12 +51,12 @@ cd ~/mochi-termux && git pull --ff-only && ./mochi.sh
 
 ## Konfigurasi opsional
 
-Supaya tidak mengetik tautan setiap kali membuka MOCHI:
+Supaya tidak mengetik Place ID setiap kali membuka MOCHI:
 
 ```sh
-echo "export MOCHI_GAME_URL='https://www.roblox.com/games/PLACE_ID'" >> ~/.bashrc
+echo "export MOCHI_PLACE_ID='PLACE_ID'" >> ~/.bashrc
 source ~/.bashrc
 ./mochi.sh
 ```
 
-Ganti `PLACE_ID` dengan ID game yang Anda miliki dari URL game Roblox resmi.
+Ganti `PLACE_ID` dengan ID angka game Roblox Anda.
